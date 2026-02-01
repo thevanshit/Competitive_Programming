@@ -5,7 +5,6 @@ using namespace std;
 void solve(){
     long long n;
     cin >> n;
-    vector <int> a;
     cout << n << " ";
     while (true){
         if(n == 1){
