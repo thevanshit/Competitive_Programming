@@ -3,7 +3,11 @@ using namespace std;
 
 
 void solve(){
-    
+    long long N;
+    cin >> N;
+
+    long long ans = (N * (N + 2)) / 4;
+    cout << ans << "\n";
 }
 
 
