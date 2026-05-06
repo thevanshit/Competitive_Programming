@@ -1,18 +1,38 @@
 # Competitive Programming
 
-A structured collection of **Data Structures & Algorithms (DSA)** and **Competitive Programming (CP)** solutions implemented in **C++**.  
+A structured collection of **Data Structures & Algorithms (DSA)** and **Competitive Programming (CP)** solutions implemented in **C++**.
 This repository is intended for practice, revision, and long-term reference while preparing for interviews and programming contests.
 
 ## Repository Structure
 
 ```
-
-DSA-CP/
-├── DSA/    # Core data structures and algorithm implementations
-├── CP/     # Competitive programming problem solutions
+Competitive_Programming/
+├── codeforces/
+│   ├── contests/          # Round-by-round contest solutions
+│   │   ├── round-1077-div2/
+│   │   ├── round-1078-div2/
+│   │   └── ...
+│   └── rated/             # Problems organized by difficulty rating
+│       ├── 900-1000/
+│       ├── 1000-1100/
+│       └── 1100-1200/
+├── codechef/
+│   └── contests/          # CodeChef Starters contest solutions
+│       ├── START223/
+│       ├── START225/
+│       └── ...
+├── atcoder/
+│   └── contests/          # AtCoder Beginner Contest solutions
+│       ├── abc-443/
+│       ├── abc-445/
+│       └── ...
+├── cses/                  # CSES Problem Set solutions
+│   ├── introductory/
+│   └── CP HandBook.pdf
+├── .cph/                  # CPH extension config (do not delete)
+├── .gitignore
 └── README.md
-
-````
+```
 
 ## Purpose
 
@@ -25,15 +45,16 @@ DSA-CP/
 
 - **Language:** C++
 - **Standard:** C++17 (recommended)
+- **IDE:** VS Code with CPH (Competitive Programming Helper) extension
 
 ## Usage
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/thevanshit/DSA-CP.git
-cd DSA-CP
-````
+git clone https://github.com/thevanshit/Competitive_Programming.git
+cd Competitive_Programming
+```
 
 Compile and run any solution:
 
@@ -42,30 +63,32 @@ g++ -std=c++17 file.cpp
 ./a.out
 ```
 
-## DSA
+## Platforms Covered
 
-Contains implementations of commonly used data structures and algorithms, including:
+| Platform | Location | Format |
+|----------|----------|--------|
+| CodeForces | `codeforces/contests/` | Round solutions (A, B, C, D...) |
+| CodeForces | `codeforces/rated/` | Problems by difficulty rating |
+| CodeChef | `codechef/contests/` | START series contests |
+| AtCoder | `atcoder/contests/` | ABC (Beginner Contest) |
+| CSES | `cses/` | Problem Set (Introductory, etc.) |
 
-* Arrays and strings
-* Linked lists, stacks, and queues
-* Trees and graphs
-* Recursion and dynamic programming
-* Searching and sorting techniques
+## Naming Convention
 
-## CP
+All solution files follow the pattern:
 
-Includes competitive programming solutions from various problem sets and contests, focusing on:
+```
+<ProblemLetter>_<Problem_Title_In_Snake_Case>.cpp
+```
 
-* Efficient algorithms
-* Edge-case handling
-* Time and space optimization
+Example: `A_Friendly_Numbers.cpp`, `B_Split_Ticketing.cpp`
 
 ## Contribution Guidelines
 
 Contributions are welcome. To contribute:
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a feature branch (`git checkout -b feature/your-feature`)
 3. Add clean, well-documented solutions
 4. Submit a pull request
 
