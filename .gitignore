@@ -1,1 +1,15 @@
 CPAuthKey
+
+# Compiled binaries
+*.bin
+
+# CPH extension metadata
+*.prob
+
+# macOS
+.DS_Store
+
+# Build artifacts
+*.o
+*.out
+a.out
