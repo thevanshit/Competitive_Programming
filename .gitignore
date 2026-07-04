@@ -13,3 +13,8 @@ CPAuthKey
 *.o
 *.out
 a.out
+
+# Dev environment
+.opencode/
+.tmp/
+.vscode/
