@@ -1,6 +1,6 @@
-# ⚡ Competitive Programming
+# Competitive Programming
 
-> **My personal DSA & Competitive Programming arsenal** — 100+ solutions across CodeForces, CodeChef, and AtCoder, meticulously organized for practice, revision, and interview prep.
+> My personal DSA & Competitive Programming arsenal -- 100+ solutions across CodeForces, CodeChef, and AtCoder, meticulously organized for practice, revision, and interview prep.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Solutions-104-blue?style=for-the-badge&logo=cplusplus" alt="Solutions"/>
@@ -14,23 +14,23 @@
 
 ---
 
-## 📊 STATS AT A GLANCE
+## STATS AT A GLANCE
 
 ```
-🚀 Total Problems Solved:  104
-📅 Active Since:           Jan 2026
-💻 Language:               C++17
-📈 Total Commits:          72
-🏆 Platforms:              3 (CodeForces, CodeChef, AtCoder)
+Total Problems Solved:  104
+Active Since:           Jan 2026
+Language:               C++17
+Total Commits:          72
+Platforms:              3 (CodeForces, CodeChef, AtCoder)
 ```
 
 ### Platform Breakdown
 
-| Platform | Contest Solutions | Rated / Upsolved | **Total** |
-|----------|:----------------:|:-----------------:|:---------:|
+| Platform | Contest Solutions | Rated / Upsolved | Total |
+|----------|:----------------:|:-----------------:|:-----:|
 | [CodeForces](https://codeforces.com) | 19 | 53 | **72** |
-| [CodeChef](https://www.codechef.com) | 18 | — | **18** |
-| [AtCoder](https://atcoder.jp) | 14 | — | **14** |
+| [CodeChef](https://www.codechef.com) | 18 | -- | **18** |
+| [AtCoder](https://atcoder.jp) | 14 | -- | **14** |
 | **Total** | **51** | **53** | **104** |
 
 ### Difficulty Distribution (CodeForces Rated)
@@ -45,56 +45,56 @@ xychart-beta
 
 | Rating Range | Problems | Level |
 |:------------:|:--------:|:-----:|
-| 900 — 1000 | 17 | ⭐ Beginner |
-| 1000 — 1100 | 31 | ⭐⭐ Easy |
-| 1100 — 1200 | 4 | ⭐⭐⭐ Medium |
-| 1900 — 2000 | 1 | 🔥 Hard |
+| 900 - 1000 | 17 | Beginner |
+| 1000 - 1100 | 31 | Easy |
+| 1100 - 1200 | 4 | Medium |
+| 1900 - 2000 | 1 | Hard |
 
 ---
 
-## 📁 REPOSITORY STRUCTURE
+## REPOSITORY STRUCTURE
 
 ```
 Competitive_Programming/
-│
-├── 📂 codeforces/                     # 72 solutions
-│   ├── 📂 contests/                   # Live contest submissions
-│   │   ├── 📂 round-1077-div2/        # 2 problems (A, B)
-│   │   ├── 📂 round-1078-div2/        # 2 problems (A, B)
-│   │   ├── 📂 round-1079-div2/        # 8 problems (A, B, C, + upsolves)
-│   │   ├── 📂 round-1080-div3/        # 4 problems (A, B, C, D)
-│   │   └── 📂 round-1081-div2/        # 3 problems (A, B, C)
-│   │
-│   └── 📂 rated/                      # Problems by difficulty rating
-│       ├── 📂 900-1000/               # 17 problems (Newbie)
-│       ├── 📂 1000-1100/              # 31 problems (Pupil)
-│       ├── 📂 1100-1200/              # 4 problems (Specialist)
-│       └── 📂 1900-2000/              # 1 problem (Candidate Master)
-│
-├── 📂 codechef/                       # 18 solutions
-│   └── 📂 contests/
-│       ├── 📂 START223/               # 5 problems
-│       ├── 📂 START225/               # 5 problems
-│       ├── 📂 START229/               # 5 problems
-│       └── 📂 START244/               # 3 problems
-│
-├── 📂 atcoder/                        # 14 solutions
-│   └── 📂 contests/
-│       ├── 📂 abc-443/                # 2 problems
-│       ├── 📂 abc-445/                # 4 problems
-│       ├── 📂 abc-450/                # 4 problems
-│       └── 📂 abc-464/                # 4 problems
-│
-├── 📂 templates/                      # Reusable code templates
-│   └── solution_template.cpp          # C++17 competitive programming template
-│
-├── 📄 README.md                       # You are here
-└── 📄 .gitignore
+|
+|-- codeforces/                     # 72 solutions
+|   |-- contests/                   # Live contest submissions
+|   |   |-- round-1077-div2/        # 2 problems (A, B)
+|   |   |-- round-1078-div2/        # 2 problems (A, B)
+|   |   |-- round-1079-div2/        # 8 problems (A, B, C, + upsolves)
+|   |   |-- round-1080-div3/        # 4 problems (A, B, C, D)
+|   |   |-- round-1081-div2/        # 3 problems (A, B, C)
+|   |
+|   |-- rated/                      # Problems by difficulty rating
+|       |-- 900-1000/               # 17 problems (Newbie)
+|       |-- 1000-1100/              # 31 problems (Pupil)
+|       |-- 1100-1200/              # 4 problems (Specialist)
+|       |-- 1900-2000/              # 1 problem (Candidate Master)
+|
+|-- codechef/                       # 18 solutions
+|   |-- contests/
+|       |-- START223/               # 5 problems
+|       |-- START225/               # 5 problems
+|       |-- START229/               # 5 problems
+|       |-- START244/               # 3 problems
+|
+|-- atcoder/                        # 14 solutions
+|   |-- contests/
+|       |-- abc-443/                # 2 problems
+|       |-- abc-445/                # 4 problems
+|       |-- abc-450/                # 4 problems
+|       |-- abc-464/                # 4 problems
+|
+|-- templates/                      # Reusable code templates
+|   |-- solution_template.cpp       # C++17 competitive programming template
+|
+|-- README.md                       # You are here
+|-- .gitignore
 ```
 
 ---
 
-## 🏁 RECENT CONTESTS PARTICIPATED
+## RECENT CONTESTS PARTICIPATED
 
 | Contest | Platform | Date | Problems Solved |
 |---------|----------|:----:|:---------------:|
@@ -107,13 +107,13 @@ Competitive_Programming/
 
 ---
 
-## 🛠️ TECH STACK
+## TECH STACK
 
 ```
-🧠 Language:     C++17 (GCC)
-⚙️ IDE:          VS Code + CPH Extension (Competitive Programming Helper)
-🔧 Build:        g++ -std=c++17 file.cpp && ./a.out
-📦 Templates:    Custom template with fast I/O, modular arithmetic, and common aliases
+Language:     C++17 (GCC)
+IDE:          VS Code + CPH Extension (Competitive Programming Helper)
+Build:        g++ -std=c++17 file.cpp && ./a.out
+Templates:    Custom template with fast I/O, modular arithmetic, and common aliases
 ```
 
 ### Quick Start
@@ -130,7 +130,7 @@ g++ -std=c++17 codeforces/contests/round-1080-div3/A_Sieve_of_Erato_67_henes.cpp
 
 ---
 
-## 📝 NAMING CONVENTION
+## NAMING CONVENTION
 
 All solutions follow a consistent pattern for easy search and reference:
 
@@ -139,13 +139,13 @@ All solutions follow a consistent pattern for easy search and reference:
 ```
 
 **Examples:**
-- `A_Divisible_Permutation.cpp` — CodeForces Round 1077, Problem A
-- `B_Center_Alignment.cpp` — AtCoder ABC 445, Problem B
-- `C_Yarik_and_Array.cpp` — CodeForces Rated 1100-1200
+- `A_Divisible_Permutation.cpp` -- CodeForces Round 1077, Problem A
+- `B_Center_Alignment.cpp` -- AtCoder ABC 445, Problem B
+- `C_Yarik_and_Array.cpp` -- CodeForces Rated 1100-1200
 
 ---
 
-## 🎯 GOALS & PROGRESS
+## GOALS & PROGRESS
 
 - [x] 100+ problems solved
 - [x] 5+ CodeForces contests participated
@@ -158,7 +158,7 @@ All solutions follow a consistent pattern for easy search and reference:
 
 ---
 
-## 📌 KEY SOLUTIONS HIGHLIGHT
+## KEY SOLUTIONS HIGHLIGHT
 
 | Problem | Platform | Difficulty | Key Concept |
 |---------|----------|:----------:|-------------|
@@ -169,20 +169,20 @@ All solutions follow a consistent pattern for easy search and reference:
 
 ---
 
-## 📚 TOPICS COVERED
+## TOPICS COVERED
 
 ```
-✅ Arrays & Hashing        ✅ Two Pointers        ✅ Binary Search
-✅ Sliding Window          ✅ Prefix Sum          ✅ Greedy Algorithms
-✅ Recursion               ✅ Number Theory       ✅ Combinatorics
-✅ Graphs & Trees          ✅ BFS / DFS           ✅ Dynamic Programming
-✅ String Manipulation     ✅ Bit Manipulation    ✅ Sorting & Searching
-✅ STL (Containers, Algorithms, Utilities)
+Arrays & Hashing        Two Pointers        Binary Search
+Sliding Window          Prefix Sum          Greedy Algorithms
+Recursion               Number Theory       Combinatorics
+Graphs & Trees          BFS / DFS           Dynamic Programming
+String Manipulation     Bit Manipulation    Sorting & Searching
+STL (Containers, Algorithms, Utilities)
 ```
 
 ---
 
-## 🔗 CONNECT WITH ME
+## CONNECT WITH ME
 
 [![GitHub](https://img.shields.io/badge/GitHub-thevanshit-181717?style=flat-square&logo=github)](https://github.com/thevanshit)
 [![CodeForces](https://img.shields.io/badge/CodeForces-thevanshit-1F8ACB?style=flat-square&logo=codeforces)](https://codeforces.com)
@@ -192,5 +192,5 @@ All solutions follow a consistent pattern for easy search and reference:
 <p align="center">
   <i>Building consistency, one problem at a time.</i>
   <br>
-  <b>Keep Coding. Keep Growing.</b> 🚀
+  <b>Keep Coding. Keep Growing.</b>
 </p>
