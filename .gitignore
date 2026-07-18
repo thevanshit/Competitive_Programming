@@ -1,10 +1,13 @@
+# Authentication keys
 CPAuthKey
+CPAuthKey.pub
 
 # Compiled binaries
 *.bin
 
-# CPH extension metadata
+# CPH extension metadata & config
 *.prob
+.cph/
 
 # macOS
 .DS_Store
@@ -13,6 +16,12 @@ CPAuthKey
 *.o
 *.out
 a.out
+
+# Compiled executables (no extension)
+atcoder/contests/abc-464/Celester
+atcoder/contests/abc-464/Crop
+atcoder/contests/abc-464/Decisive_Battle
+atcoder/contests/abc-464/Plumage_Palette
 
 # Dev environment
 .opencode/
