@@ -154,8 +154,6 @@ All solutions follow a consistent pattern for easy search and reference:
 - [x] 200 problems solved
 - [ ] 500 problems solved
 - [ ] Reach CodeForces Specialist (1400+ rating)
-- [ ] Add CSES Problem Set solutions
-- [ ] Add LeetCode solutions
 
 ---
 
