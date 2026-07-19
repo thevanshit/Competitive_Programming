@@ -1,13 +1,13 @@
 # Competitive Programming
 
-> My personal DSA & Competitive Programming arsenal -- 100+ solutions across CodeForces, CodeChef, and AtCoder, meticulously organized for practice, revision, and interview prep.
+> My personal DSA & Competitive Programming arsenal -- 295+ solutions across CodeForces, CodeChef, and AtCoder, meticulously organized for practice, revision, and interview prep.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Solutions-104-blue?style=for-the-badge&logo=cplusplus" alt="Solutions"/>
+  <img src="https://img.shields.io/badge/Solutions-295-blue?style=for-the-badge&logo=cplusplus" alt="Solutions"/>
   <img src="https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=for-the-badge&logo=cplusplus" alt="C++17"/>
-  <img src="https://img.shields.io/badge/CodeForces-72-red?style=for-the-badge&logo=codeforces" alt="CodeForces"/>
-  <img src="https://img.shields.io/badge/CodeChef-18-brown?style=for-the-badge&logo=codechef" alt="CodeChef"/>
-  <img src="https://img.shields.io/badge/AtCoder-14-blue?style=for-the-badge" alt="AtCoder"/>
+  <img src="https://img.shields.io/badge/CodeForces-140-red?style=for-the-badge&logo=codeforces" alt="CodeForces"/>
+  <img src="https://img.shields.io/badge/CodeChef-90-brown?style=for-the-badge&logo=codechef" alt="CodeChef"/>
+  <img src="https://img.shields.io/badge/AtCoder-65-blue?style=for-the-badge" alt="AtCoder"/>
   <img src="https://img.shields.io/badge/Commits-72-brightgreen?style=for-the-badge" alt="Commits"/>
   <img src="https://img.shields.io/badge/Active-2026-success?style=for-the-badge" alt="Active"/>
 </p>
@@ -17,9 +17,9 @@
 ## STATS AT A GLANCE
 
 ```
-Total Problems Solved:  104
+Total Problems Solved:  295
 Active Since:           Jan 2026
-Language:               C++17
+Language:               C++20
 Total Commits:          72
 Platforms:              3 (CodeForces, CodeChef, AtCoder)
 ```
@@ -28,10 +28,10 @@ Platforms:              3 (CodeForces, CodeChef, AtCoder)
 
 | Platform | Contest Solutions | Rated / Upsolved | Total |
 |----------|:----------------:|:-----------------:|:-----:|
-| [CodeForces](https://codeforces.com) | 19 | 53 | **72** |
-| [CodeChef](https://www.codechef.com) | 18 | -- | **18** |
-| [AtCoder](https://atcoder.jp) | 14 | -- | **14** |
-| **Total** | **51** | **53** | **104** |
+| [CodeForces](https://codeforces.com) | 72 | 68 | **140** |
+| [CodeChef](https://www.codechef.com) | 90 | -- | **90** |
+| [AtCoder](https://atcoder.jp) | 65 | -- | **65** |
+| **Total** | **227** | **68** | **295** |
 
 ### Difficulty Distribution (CodeForces Rated)
 
@@ -40,14 +40,14 @@ xychart-beta
   title "CodeForces Problems by Rating"
   x-axis ["900-1000", "1000-1100", "1100-1200", "1900-2000"]
   y-axis "Problems" 0 --> 35
-  bar [17, 31, 4, 1]
+  bar [31, 31, 5, 1]
 ```
 
 | Rating Range | Problems | Level |
 |:------------:|:--------:|:-----:|
-| 900 - 1000 | 17 | Beginner |
+| 900 - 1000 | 31 | Beginner |
 | 1000 - 1100 | 31 | Easy |
-| 1100 - 1200 | 4 | Medium |
+| 1100 - 1200 | 5 | Medium |
 | 1900 - 2000 | 1 | Hard |
 
 ---
@@ -57,7 +57,7 @@ xychart-beta
 ```
 Competitive_Programming/
 |
-|-- codeforces/                     # 72 solutions
+|-- codeforces/                     # 140 solutions
 |   |-- contests/                   # Live contest submissions
 |   |   |-- round-1077-div2/        # 2 problems (A, B)
 |   |   |-- round-1078-div2/        # 2 problems (A, B)
@@ -66,19 +66,19 @@ Competitive_Programming/
 |   |   |-- round-1081-div2/        # 3 problems (A, B, C)
 |   |
 |   |-- rated/                      # Problems by difficulty rating
-|       |-- 900-1000/               # 17 problems (Newbie)
+|       |-- 900-1000/               # 31 problems (Newbie)
 |       |-- 1000-1100/              # 31 problems (Pupil)
-|       |-- 1100-1200/              # 4 problems (Specialist)
+|       |-- 1100-1200/              # 5 problems (Specialist)
 |       |-- 1900-2000/              # 1 problem (Candidate Master)
 |
-|-- codechef/                       # 18 solutions
+|-- codechef/                       # 90 solutions
 |   |-- contests/
 |       |-- START223/               # 5 problems
 |       |-- START225/               # 5 problems
 |       |-- START229/               # 5 problems
 |       |-- START244/               # 3 problems
 |
-|-- atcoder/                        # 14 solutions
+|-- atcoder/                        # 65 solutions
 |   |-- contests/
 |       |-- abc-443/                # 2 problems
 |       |-- abc-445/                # 4 problems
@@ -147,11 +147,12 @@ All solutions follow a consistent pattern for easy search and reference:
 
 ## GOALS & PROGRESS
 
-- [x] 100+ problems solved
+- [x] 295+ problems solved
 - [x] 5+ CodeForces contests participated
 - [x] 4+ CodeChef Starters attempted
 - [x] 4+ AtCoder ABCs attempted
-- [ ] 200 problems solved
+- [x] 200 problems solved
+- [ ] 500 problems solved
 - [ ] Reach CodeForces Specialist (1400+ rating)
 - [ ] Add CSES Problem Set solutions
 - [ ] Add LeetCode solutions

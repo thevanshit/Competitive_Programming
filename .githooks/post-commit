@@ -1,0 +1,39 @@
+#!/bin/bash
+# Post-commit hook — auto-update README stats & push
+#
+# Installed by: scripts/install-hook.sh
+# Runs after every commit: scans for new .cpp files, updates stats,
+# amends the commit with the README change, and pushes.
+
+REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
+LOCKFILE="$REPO_ROOT/.git/update_stats.lock"
+
+# ── Prevent recursive loop from --amend ────────────────────────────
+if [ -f "$LOCKFILE" ]; then
+    rm -f "$LOCKFILE"
+    exit 0
+fi
+
+# ── Update stats ───────────────────────────────────────────────────
+python3 "$REPO_ROOT/scripts/update_stats.py"
+
+# ── If README changed, amend + push ───────────────────────────────
+if ! git diff --quiet "$REPO_ROOT/README.md"; then
+    touch "$LOCKFILE"
+    git add "$REPO_ROOT/README.md"
+
+    # Amend into the just-made commit (preserves message)
+    if git commit --amend --no-edit > /dev/null 2>&1; then
+        echo "📝 README stats amended into commit."
+
+        # Push to remote
+        BRANCH=$(git rev-parse --abbrev-ref HEAD)
+        if git push origin "$BRANCH" 2>&1; then
+            echo "🚀 Pushed to origin/$BRANCH"
+        else
+            echo "⚠️  Push failed — you may need to push manually."
+        fi
+    else
+        echo "⚠️  Could not amend commit."
+    fi
+fi
