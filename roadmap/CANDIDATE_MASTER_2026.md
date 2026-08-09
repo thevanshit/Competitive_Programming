@@ -1,4 +1,4 @@
-# 🚀 CANDIDATE MASTER ROADMAP 2026
+# CANDIDATE MASTER ROADMAP 2026
 ### 1328 → 2000+ in 47 Days | Codeforces · AtCoder · CodeChef
 
 > **Start:** August 9, 2026 · **Target:** September 25, 2026 · **Total: 47 days**
