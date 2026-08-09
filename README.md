@@ -64,6 +64,8 @@ Competitive_Programming/
 |   |   |-- round-1079-div2/        # 8 problems (A, B, C, + upsolves)
 |   |   |-- round-1080-div3/        # 4 problems (A, B, C, D)
 |   |   |-- round-1081-div2/        # 3 problems (A, B, C)
+|   |   |-- round-1112-div2/        # 5 problems (A, B, C, D, F)
+|   |   |-- round-1115-div2/        # 3 problems (A, B, C)
 |   |
 |   |-- rated/                      # Problems by difficulty rating
 |       |-- 900-1000/               # 31 problems (Newbie)
@@ -84,6 +86,8 @@ Competitive_Programming/
 |       |-- abc-445/                # 4 problems
 |       |-- abc-450/                # 4 problems
 |       |-- abc-464/                # 4 problems
+|       |-- abc-468/                # 6 problems
+|       |-- abc-470/                # 4 problems (A, B, C, D)
 |
 |-- templates/                      # Reusable code templates
 |   |-- solution_template.cpp       # C++17 competitive programming template
@@ -98,6 +102,9 @@ Competitive_Programming/
 
 | Contest | Platform | Date | Problems Solved |
 |---------|----------|:----:|:---------------:|
+| CodeForces Round 1115 (Div. 2) | CodeForces | Aug 2026 | 3 / 6 |
+| CodeForces Round 1112 (Div. 2) | CodeForces | Jul 2026 | 5 / 6 |
+| AtCoder ABC 470 | AtCoder | Aug 2026 | 4 / 7 |
 | CodeForces Round 1081 (Div. 2) | CodeForces | Jul 2026 | 3 / 6 |
 | CodeForces Round 1080 (Div. 3) | CodeForces | Jul 2026 | 4 / 7 |
 | CodeForces Round 1079 (Div. 2) | CodeForces | Jun 2026 | 8 / 8 |
