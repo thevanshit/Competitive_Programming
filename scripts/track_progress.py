@@ -86,7 +86,7 @@ def load_progress() -> dict:
             with open(PROGRESS_FILE) as f:
                 return json.load(f)
         except (json.JSONDecodeError, KeyError):
-            print("⚠️  Corrupt progress file. Reinitialising...")
+            print("WARNING: Corrupt progress file. Reinitialising...")
     return {"cp31": {}, "cses": {}, "ratings": {}}
 
 
@@ -121,7 +121,7 @@ def update_cp31_table(text: str, disk: Dict[str, int], manual: dict) -> str:
     for tier, (_glob, key) in CP31_TIERS.items():
         done = manual.get(key, disk.get(f"cp31_{tier}", 0))
         remaining = max(CP31_TOTAL - done, 0)
-        target = "✅ Done" if remaining == 0 else _target_for(tier)
+        target = "Done" if remaining == 0 else _target_for(tier)
         row = f"| {tier} | {CP31_TOTAL} | {done} | {remaining} | {target} |"
         text = re.sub(
             rf"\| {re.escape(tier)} \| \d+ \| [\d~]+ \| [\d~]+ \| [^|]* \|",
@@ -134,8 +134,8 @@ def update_cp31_table(text: str, disk: Dict[str, int], manual: dict) -> str:
 def _target_for(tier: str) -> str:
     """Map tier to its target date from the roadmap."""
     targets = {
-        "900-1000": "✅ Done",
-        "1000-1100": "✅ Done",
+        "900-1000": "Done",
+        "1000-1100": "Done",
         "1100-1200": "Aug 15",
         "1300": "Aug 15",
         "1400": "Aug 22",
@@ -211,9 +211,9 @@ def main() -> None:
         if rating is not None:
             progress.setdefault("ratings", {})["codeforces"] = rating
             text = update_rating_table(text, progress["ratings"])
-            print(f"📡 Codeforces rating fetched: {rating}")
+            print(f"Codeforces rating fetched: {rating}")
         else:
-            print("⚠️  Could not fetch Codeforces rating (offline?).")
+            print("WARNING: Could not fetch Codeforces rating (offline?).")
 
     with open(ROADMAP_FILE, "w") as f:
         f.write(text)
@@ -221,7 +221,7 @@ def main() -> None:
     save_progress(progress)
 
     # Summary
-    print("✅ Roadmap progress tables updated:")
+    print("Roadmap progress tables updated:")
     for tier, (_glob, key) in CP31_TIERS.items():
         done = manual.get(key, disk.get(f"cp31_{tier}", 0))
         print(f"   CP-31 {tier}: {done}/{CP31_TOTAL}")

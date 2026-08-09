@@ -38,7 +38,7 @@ public:
         long long odd = 0;
         int rem = n - k;
         if (rem >= 0 && rem % 2 == 0) {
-            // Each odd = 2*x_i + 1 → sum(x_i) = (n-k)/2
+            // Each odd = 2*x_i + 1, so sum(x_i) = (n-k)/2
             int m = rem / 2;
             odd = C(m + k - 1, k - 1);
         }

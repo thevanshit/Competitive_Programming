@@ -59,7 +59,7 @@ def load_state() -> dict:
             with open(STATE_FILE) as f:
                 return json.load(f)
         except (json.JSONDecodeError, KeyError):
-            print("⚠️  Corrupt state file. Reinitialising from disk...")
+            print("WARNING: Corrupt state file. Reinitialising from disk...")
     return _initial_state()
 
 
@@ -245,15 +245,15 @@ def main() -> None:
     # Check for any net change
     changed = any(new_totals[k] != old_totals[k] for k in old_totals)
     if not changed:
-        print("✓ Stats unchanged — no new solution files detected.")
+        print("Stats unchanged - no new solution files detected.")
         return
 
     # Print delta
-    print("📊 Stats update detected:")
+    print("Stats update detected:")
     for key in old_totals:
         delta = new_totals[key] - old_totals[key]
         if delta:
-            print(f"   {key}: {old_totals[key]} → {new_totals[key]} (+{delta})")
+            print(f"   {key}: {old_totals[key]} -> {new_totals[key]} (+{delta})")
 
     # Update README
     update_readme(new_totals)
@@ -264,7 +264,7 @@ def main() -> None:
     save_state(state)
 
     d = derived(new_totals)
-    print(f"✅ README updated — grand total: {d['grand_total']} problems")
+    print(f"README updated - grand total: {d['grand_total']} problems")
 
 
 if __name__ == "__main__":
