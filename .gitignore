@@ -12,19 +12,10 @@ CPAuthKey.pub
 # macOS
 .DS_Store
 
-# Local books
-Books/Introduction to Algorithms.pdf
-
 # Build artifacts
 *.o
 *.out
 a.out
-
-# Compiled executables (no extension)
-atcoder/contests/abc-464/Celester
-atcoder/contests/abc-464/Crop
-atcoder/contests/abc-464/Decisive_Battle
-atcoder/contests/abc-464/Plumage_Palette
 
 # Dev environment
 .tmp/
