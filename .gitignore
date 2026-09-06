@@ -24,6 +24,5 @@ atcoder/contests/abc-464/Decisive_Battle
 atcoder/contests/abc-464/Plumage_Palette
 
 # Dev environment
-.opencode/
 .tmp/
 .vscode/
