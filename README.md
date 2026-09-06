@@ -1,202 +1,61 @@
 # Competitive Programming
 
-> My personal DSA & Competitive Programming arsenal -- 295+ solutions across CodeForces, CodeChef, and AtCoder, meticulously organized for practice, revision, and interview prep.
+A focused collection of competitive-programming solutions, organized by platform and contest.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Solutions-295-blue?style=for-the-badge&logo=cplusplus" alt="Solutions"/>
-  <img src="https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=for-the-badge&logo=cplusplus" alt="C++17"/>
-  <img src="https://img.shields.io/badge/CodeForces-140-red?style=for-the-badge&logo=codeforces" alt="CodeForces"/>
-  <img src="https://img.shields.io/badge/CodeChef-90-brown?style=for-the-badge&logo=codechef" alt="CodeChef"/>
-  <img src="https://img.shields.io/badge/AtCoder-65-blue?style=for-the-badge" alt="AtCoder"/>
-  <img src="https://img.shields.io/badge/Commits-72-brightgreen?style=for-the-badge" alt="Commits"/>
-  <img src="https://img.shields.io/badge/Active-2026-success?style=for-the-badge" alt="Active"/>
-</p>
+## Books Read
 
----
+All books currently stored in [`Books/`](./Books) have been read:
 
-## STATS AT A GLANCE
+- CP Book 01
+- CP Book 02
+- CSES Book
+- Introduction to Algorithms
 
-```
-Total Problems Solved:  295
-Active Since:           Jan 2026
-Language:               C++20
-Total Commits:          72
-Platforms:              3 (CodeForces, CodeChef, AtCoder)
-```
 
-### Platform Breakdown
+## Repository Structure
 
-| Platform | Contest Solutions | Rated / Upsolved | Total |
-|----------|:----------------:|:-----------------:|:-----:|
-| [CodeForces](https://codeforces.com) | 72 | 68 | **140** |
-| [CodeChef](https://www.codechef.com) | 90 | -- | **90** |
-| [AtCoder](https://atcoder.jp) | 65 | -- | **65** |
-| **Total** | **227** | **68** | **295** |
-
-### Difficulty Distribution (CodeForces Rated)
-
-```mermaid
-xychart-beta
-  title "CodeForces Problems by Rating"
-  x-axis ["900-1000", "1000-1100", "1100-1200", "1900-2000"]
-  y-axis "Problems" 0 --> 35
-  bar [31, 31, 5, 1]
+```text
+atcoder/    AtCoder contests
+codechef/   CodeChef contests and DSA challenges
+codeforces/ Codeforces contests, rated problems, and CP-31
+cses/       CSES problem-set chapters
+oj/         Online Judge problem solutions
+kattis/     Kattis problem solutions
+Books/      Competitive-programming references
+templates/  Reusable solution templates
 ```
 
-| Rating Range | Problems | Level |
-|:------------:|:--------:|:-----:|
-| 900 - 1000 | 31 | Beginner |
-| 1000 - 1100 | 31 | Easy |
-| 1100 - 1200 | 5 | Medium |
-| 1900 - 2000 | 1 | Hard |
+## Languages and Style
 
----
+- C++17/C++20 solutions
+- Contest folders named using the official contest and problem titles
+- Reusable templates for fast input/output and common utilities
 
-## REPOSITORY STRUCTURE
-
-```
-Competitive_Programming/
-|
-|-- codeforces/                     # 140 solutions
-|   |-- contests/                   # Live contest submissions
-|   |   |-- round-1077-div2/        # 2 problems (A, B)
-|   |   |-- round-1078-div2/        # 2 problems (A, B)
-|   |   |-- round-1079-div2/        # 8 problems (A, B, C, + upsolves)
-|   |   |-- round-1080-div3/        # 4 problems (A, B, C, D)
-|   |   |-- round-1081-div2/        # 3 problems (A, B, C)
-|   |   |-- round-1112-div2/        # 5 problems (A, B, C, D, F)
-|   |   |-- round-1115-div2/        # 3 problems (A, B, C)
-|   |
-|   |-- rated/                      # Problems by difficulty rating
-|       |-- 900-1000/               # 31 problems (Newbie)
-|       |-- 1000-1100/              # 31 problems (Pupil)
-|       |-- 1100-1200/              # 5 problems (Specialist)
-|       |-- 1900-2000/              # 1 problem (Candidate Master)
-|
-|-- codechef/                       # 90 solutions
-|   |-- contests/
-|       |-- START223/               # 5 problems
-|       |-- START225/               # 5 problems
-|       |-- START229/               # 5 problems
-|       |-- START244/               # 3 problems
-|
-|-- atcoder/                        # 65 solutions
-|   |-- contests/
-|       |-- abc-443/                # 2 problems
-|       |-- abc-445/                # 4 problems
-|       |-- abc-450/                # 4 problems
-|       |-- abc-464/                # 4 problems
-|       |-- abc-468/                # 6 problems
-|       |-- abc-470/                # 4 problems (A, B, C, D)
-|
-|-- templates/                      # Reusable code templates
-|   |-- solution_template.cpp       # C++17 competitive programming template
-|
-|-- README.md                       # You are here
-|-- .gitignore
-```
-
----
-
-## RECENT CONTESTS PARTICIPATED
-
-| Contest | Platform | Date | Problems Solved |
-|---------|----------|:----:|:---------------:|
-| CodeForces Round 1115 (Div. 2) | CodeForces | Aug 2026 | 3 / 6 |
-| CodeForces Round 1112 (Div. 2) | CodeForces | Jul 2026 | 5 / 6 |
-| AtCoder ABC 470 | AtCoder | Aug 2026 | 4 / 7 |
-| CodeForces Round 1081 (Div. 2) | CodeForces | Jul 2026 | 3 / 6 |
-| CodeForces Round 1080 (Div. 3) | CodeForces | Jul 2026 | 4 / 7 |
-| CodeForces Round 1079 (Div. 2) | CodeForces | Jun 2026 | 8 / 8 |
-| AtCoder ABC 464 | AtCoder | Jul 2026 | 4 / 7 |
-| AtCoder ABC 450 | AtCoder | May 2026 | 4 / 7 |
-| CodeChef START244 | CodeChef | Jul 2026 | 3 / 7 |
-
----
-
-## TECH STACK
-
-```
-Language:     C++17 (GCC)
-IDE:          VS Code + CPH Extension (Competitive Programming Helper)
-Build:        g++ -std=c++17 file.cpp && ./a.out
-Templates:    Custom template with fast I/O, modular arithmetic, and common aliases
-```
-
-### Quick Start
+## Running a Solution
 
 ```bash
-# Clone the repo
-git clone https://github.com/thevanshit/Competitive_Programming.git
-cd Competitive_Programming
-
-# Run any solution
-g++ -std=c++17 codeforces/contests/round-1080-div3/A_Sieve_of_Erato_67_henes.cpp
-./a.out
+g++ -std=c++17 path/to/solution.cpp -o solution
+./solution
 ```
 
----
+## Links
 
-## NAMING CONVENTION
+- [AtCoder](https://atcoder.jp/)
+- [CodeChef](https://www.codechef.com/)
+- [Codeforces](https://codeforces.com/)
+- [CSES](https://cses.fi/problemset/)
+- [Online Judge](https://onlinejudge.org/index.php?option=com_frontpage&Itemid=1)
+- [Kattis](https://open.kattis.com/)
+- [Repository](https://github.com/thevanshit/Competitive_Programming)
 
-All solutions follow a consistent pattern for easy search and reference:
+## Public Profile
 
-```
-<ProblemLetter>_<Problem_Title_In_Snake_Case>.cpp
-```
+Public profiles for [`thevanshit`](https://github.com/thevanshit):
 
-**Examples:**
-- `A_Divisible_Permutation.cpp` -- CodeForces Round 1077, Problem A
-- `B_Center_Alignment.cpp` -- AtCoder ABC 445, Problem B
-- `C_Yarik_and_Array.cpp` -- CodeForces Rated 1100-1200
-
----
-
-## GOALS & PROGRESS
-
-- [x] 295+ problems solved
-- [x] 5+ CodeForces contests participated
-- [x] 4+ CodeChef Starters attempted
-- [x] 4+ AtCoder ABCs attempted
-- [x] 200 problems solved
-- [ ] 500 problems solved
-- [ ] Reach CodeForces Specialist (1400+ rating)
-
----
-
-## KEY SOLUTIONS HIGHLIGHT
-
-| Problem | Platform | Difficulty | Key Concept |
-|---------|----------|:----------:|-------------|
-| [Near Yet Far](./codeforces/contests/round-1079-div2/Near_Yet_Far.cpp) | CodeForces | Div2 E | Graph Theory / BFS |
-| [D_Counting_Factorizations](./codeforces/rated/1900%20-%202000/D_Counting_Factorizations.cpp) | CodeForces | 1900+ | Number Theory / Combinatorics |
-| [D_Reconstruct_Chocolate](./atcoder/contests/abc-445/D_Reconstruct_Chocolate.cpp) | AtCoder | ABC D | Greedy / Simulation |
-| [Carrot_Collection](./codechef/contests/START244/Carrot_Collection.cpp) | CodeChef | START | Prefix Sum / Optimization |
-
----
-
-## TOPICS COVERED
-
-```
-Arrays & Hashing        Two Pointers        Binary Search
-Sliding Window          Prefix Sum          Greedy Algorithms
-Recursion               Number Theory       Combinatorics
-Graphs & Trees          BFS / DFS           Dynamic Programming
-String Manipulation     Bit Manipulation    Sorting & Searching
-STL (Containers, Algorithms, Utilities)
-```
-
----
-
-## CONNECT WITH ME
-
-[![GitHub](https://img.shields.io/badge/GitHub-thevanshit-181717?style=flat-square&logo=github)](https://github.com/thevanshit)
-[![CodeForces](https://img.shields.io/badge/CodeForces-thevanshit-1F8ACB?style=flat-square&logo=codeforces)](https://codeforces.com)
-
----
-
-<p align="center">
-  <i>Building consistency, one problem at a time.</i>
-  <br>
-  <b>Keep Coding. Keep Growing.</b>
-</p>
+- [AtCoder](https://atcoder.jp/users/thevanshit)
+- [CodeChef](https://www.codechef.com/users/thevanshit)
+- [Codeforces](https://codeforces.com/profile/thevanshit)
+- [LeetCode](https://leetcode.com/u/thevanshit/)
+- [Online Judge](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_authorstats&userid=thevanshit)
+- [CSES](https://cses.fi/user/thevanshit)
+- [Kattis](https://open.kattis.com/users/thevanshit)

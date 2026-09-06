@@ -2,39 +2,55 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define LSOne(S) ((S) & -(S))
+using ll = long long;
+using vi = vector<int>;
+using pii = pair<int, int>;
+
+#define all(x) begin(x), end(x)
+#define sz(x) (int)(x).size()
+#define pb push_back
+
+constexpr int lsOne(int S) { return S & -S; }
 
 int N;
-double dist[20][20], memo[1 << 16];
+array<double, 20> x, y;
+array<array<double, 20>, 20> dist;
+array<double, 1 << 16> memo;
 
-double dp(int mask){
+double dp(int mask) {
     double &ans = memo[mask];
-    if(ans > -0.5) return ans;
-    if(mask == 0) return 0;
+    if (ans > -0.5) return ans;
+    if (mask == 0) return 0;
     ans = 1e9;
-    int two_pow_p1 = LSOne(mask);
-    int p1 = __builtin_ctz(two_pow_p1);
-    int m = mask - two_pow_p1;
-    while(m){
-        int two_pow_p2 = LSOne(m);
-        int p2 = __builtin_ctz(two_pow_p2);
-        ans = min(ans, dist[p1][p2] + dp(mask ^ two_pow_p1 ^ two_pow_p2));
-        m -= two_pow_p2;
+    int p1 = countr_zero(static_cast<unsigned>(lsOne(mask)));
+    int m = mask ^ lsOne(mask);
+    while (m) {
+        int p2 = countr_zero(static_cast<unsigned>(lsOne(m)));
+        ans = min(ans, dist[p1][p2] + dp(mask ^ lsOne(mask) ^ lsOne(m)));
+        m -= lsOne(m);
     }
     return ans;
 }
 
-int main(){
-    int caseNo = 0;
-    double x[20], y[20];
-    while (scanf("%d", &N), N) { 
-        for (int i = 0; i < 2*N; ++i)
-            scanf("%*s %lf %lf", &x[i], &y[i]);
-        for (int i = 0; i < 2*N-1; ++i) 
-            for (int j = i+1; j < 2*N; ++j) 
-                dist[i][j] = dist[j][i] = hypot(x[i]-x[j], y[i]-y[j]);
-        for (int i = 0; i < (1 << (2*N)); ++i) memo[i] = -1.0;
-        printf("Case %d: %.2lf\n", ++caseNo, dp((1<<(2*N)) - 1));
+void solve() {
+    for (int i = 0; i < 2 * N; ++i) {
+        string name;
+        cin >> name >> x[i] >> y[i];
     }
-    return 0;
+    for (int i = 0; i < 2 * N - 1; ++i)
+        for (int j = i + 1; j < 2 * N; ++j)
+            dist[i][j] = dist[j][i] = hypot(x[i] - x[j], y[i] - y[j]);
+    ranges::fill(memo, -1.0);
+    cout << fixed << setprecision(2) << dp((1 << (2 * N)) - 1) << '\n';
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int caseNo = 0;
+    while (cin >> N && N) {
+        cout << "Case " << ++caseNo << ": ";
+        solve();
+    }
 }
