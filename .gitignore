@@ -12,6 +12,9 @@ CPAuthKey.pub
 # macOS
 .DS_Store
 
+# Local books
+Books/Introduction to Algorithms.pdf
+
 # Build artifacts
 *.o
 *.out
