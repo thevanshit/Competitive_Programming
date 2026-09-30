@@ -17,14 +17,6 @@ bool isfactor(ll a, ll b){
     return false;
 }
 
-void reverse(ll start, ll end, vector<ll> &fac){
-    while(start < end){
-        swap(fac[start], fac[end]);
-        start++;
-        end--;
-    }
-}
-
 void solve() {
     ll n;
     cin >> n;
@@ -32,12 +24,11 @@ void solve() {
     vector <ll> fac;
     for(ll i = 1; i <= n; i++){
         if(isfactor(i, n)){
-            fac.push_back(i);
+            fac.pb(i);
         }
     }
-    reverse(0, fac.size() - 1, fac);
     for(ll &f : fac){
-        if(f == 1) cout << f;
+        if(f == n) cout << f;
         else cout << f << " ";
     }
     return;
