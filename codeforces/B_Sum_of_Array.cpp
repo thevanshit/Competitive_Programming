@@ -15,7 +15,16 @@ using pll = pair<ll,ll>;
 #define ss second
 
 void solve() {
-    
+    int n;
+    cin >> n;
+
+    vi a(n);
+    for(int &x : a) cin >> x;
+    ll sum = 0;
+    for(int i = 0; i < n; i++){
+        sum += a[i];
+    }
+    cout << sum << "\n";
 }
 
 int main() {
