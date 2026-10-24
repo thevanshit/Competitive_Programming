@@ -1,0 +1,68 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C++23: build current file",
+            "type": "process",
+            "command": "/opt/homebrew/bin/g++-16",
+            "args": [
+                "-std=c++23",
+                "-O2",
+                "-pipe",
+                "-Wall",
+                "-Wextra",
+                "-Wshadow",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "clear": true,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "C++23: run current file",
+            "type": "process",
+            "command": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "dependsOn": "C++23: build current file",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Python 3.13: run current file",
+            "type": "process",
+            "command": "${workspaceFolder}/.venv/bin/python",
+            "args": [
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": "test",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}

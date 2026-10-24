@@ -1,0 +1,36 @@
+{
+    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-16",
+    "C_Cpp.default.cppStandard": "c++23",
+    "C_Cpp.default.intelliSenseMode": "macos-gcc-arm64",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**"
+    ],
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.h": "cpp",
+        "*.hpp": "cpp"
+    },
+    "files.exclude": {
+        "**/*.out": true,
+        "**/*.bin": true
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.terminal.activateEnvironment": true,
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.intelliSenseEngine": "default",
+    "editor.formatOnSave": false,
+    "editor.rulers": [
+        100
+    ],
+    "cph.general.defaultLanguage": "cpp",
+    "cph.general.saveLocation": "${workspaceFolder}/.cph",
+    "cph.language.cpp.compiler": "/opt/homebrew/bin/g++-16",
+    "cph.language.cpp.compileOptions": "-std=c++23 -O2 -pipe -Wall -Wextra",
+    "cph.language.cpp.executeCommand": "${program}",
+    "cph.language.python.compiler": "${workspaceFolder}/.venv/bin/python",
+    "cph.language.python.executeCommand": "${workspaceFolder}/.venv/bin/python ${file}"
+}

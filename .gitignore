@@ -17,6 +17,10 @@ CPAuthKey.pub
 *.out
 a.out
 
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
 # Dev environment
 .tmp/
-.vscode/

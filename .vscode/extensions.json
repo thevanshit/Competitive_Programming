@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "competitive-companion.competitive-companion",
+        "divyanshuagrawal.competitive-programming-helper"
+    ]
+}

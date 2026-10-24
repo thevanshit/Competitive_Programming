@@ -1,0 +1,31 @@
+{
+    "Competitive programming solution": {
+        "prefix": "cp",
+        "body": [
+            "import sys",
+            "",
+            "input = sys.stdin.readline",
+            "",
+            "def solve():",
+            "\t$0",
+            "",
+            "if __name__ == \"__main__\":",
+            "\tsolve()"
+        ],
+        "description": "Python competitive programming template"
+    },
+    "Fast integer input": {
+        "prefix": "cpi",
+        "body": [
+            "list(map(int, input().split()))"
+        ],
+        "description": "Read a space-separated list of integers"
+    },
+    "Fast integer input from stdin": {
+        "prefix": "cpin",
+        "body": [
+            "list(map(int, sys.stdin.buffer.readline().split()))"
+        ],
+        "description": "Read integers directly from the stdin buffer"
+    }
+}
