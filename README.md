@@ -8,6 +8,7 @@ A focused collection of competitive-programming solutions, organized by platform
 atcoder/    AtCoder contests
 codechef/   CodeChef contests and DSA challenges
 codeforces/ Codeforces contests, rated problems
+cses/       cses problem set
 templates/  Reusable solution templates
 ```
 
