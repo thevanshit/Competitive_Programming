@@ -6,7 +6,7 @@
             "type": "process",
             "command": "/opt/homebrew/bin/g++-16",
             "args": [
-                "-std=c++23",
+                "-std=gnu++23",
                 "-O2",
                 "-pipe",
                 "-Wall",

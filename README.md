@@ -20,8 +20,27 @@ templates/  Reusable solution templates
 
 ### Running a Solution
 
+Install the current Homebrew GCC release (the repository is configured for its
+versioned compiler executable):
+
 ```bash
-/opt/homebrew/bin/g++-16 -std=c++23 -O2 -pipe path/to/solution.cpp -o solution
+brew install gcc
+g++-16 --version
+```
+
+The compiler provides GNU's `bits/stdc++.h` convenience header and supports
+C++23. Verify the complete setup with:
+
+```bash
+printf '#include <bits/stdc++.h>\nint main() { return 0; }\n' >/tmp/cpp23-check.cpp
+g++-16 -std=c++23 /tmp/cpp23-check.cpp -o /tmp/cpp23-check
+/tmp/cpp23-check
+```
+
+Compile an individual solution with:
+
+```bash
+/opt/homebrew/bin/g++-16 -std=gnu++23 -O2 -pipe path/to/solution.cpp -o solution
 ./solution
 ```
 

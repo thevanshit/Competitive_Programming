@@ -28,9 +28,14 @@
     ],
     "cph.general.defaultLanguage": "cpp",
     "cph.general.saveLocation": "${workspaceFolder}/.cph",
-    "cph.language.cpp.compiler": "/opt/homebrew/bin/g++-16",
-    "cph.language.cpp.compileOptions": "-std=c++23 -O2 -pipe -Wall -Wextra",
+    "cph.language.cpp.Command": "/opt/homebrew/bin/g++-16",
+    "cph.language.cpp.Args": "-std=gnu++23 -O2 -pipe -Wall -Wextra",
+    "cph.language.cpp.OutputArg": "-o",
     "cph.language.cpp.executeCommand": "${program}",
+    "code-runner.executorMap": {
+        "cpp": "/opt/homebrew/bin/g++-16 -std=gnu++23 -O2 -pipe -Wall -Wextra \"$fullFileName\" -o \"$dir\\/$fileNameWithoutExt.out\" && \"$dir\\/$fileNameWithoutExt.out\""
+    },
+    "code-runner.runInTerminal": true,
     "cph.language.python.compiler": "${workspaceFolder}/.venv/bin/python",
     "cph.language.python.executeCommand": "${workspaceFolder}/.venv/bin/python ${file}"
 }
