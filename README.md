@@ -75,3 +75,6 @@ Public profiles for [`thevanshit`](https://github.com/thevanshit):
 - [CodeChef](https://www.codechef.com/users/thevanshit)
 - [Codeforces](https://codeforces.com/profile/thevanshitgaur)
 - [LeetCode](https://leetcode.com/u/thevanshit/)
+
+
+### No More contribution to this repo after this i'll be solving problems differently a major setback hit and gonna change everything after it - dated (25 Oct 2026).
