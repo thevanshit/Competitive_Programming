@@ -54,5 +54,5 @@ Public profiles for [`thevanshit`](https://github.com/thevanshit):
 
 - [AtCoder](https://atcoder.jp/users/thevanshit)
 - [CodeChef](https://www.codechef.com/users/thevanshit)
-- [Codeforces](https://codeforces.com/profile/thevanshit)
+- [Codeforces](https://codeforces.com/profile/thevanshitgaur)
 - [LeetCode](https://leetcode.com/u/thevanshit/)
